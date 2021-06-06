@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: sans-serif;
+  text-decoration: none;
+
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(243, 243, 243);
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  display: flex;
+}
+
+.caixa-central {
+  align-items: center;
+  display: flex;
+  justify-content: start;
+  width: 60%;
+  height: 100vh;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+img#cellphone {
+  height: 50rem;
+}
+
+
+.continue {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 35%;
+  min-height: 25rem;
+  border: 1px solid lightgray;
+  background-color: #ffffff
+}
+
+.continue h1 {
+  font-size: 32px;
+  font-family: cursive;
+}
+
+.continue img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.entrar {
+  background-color: #0095f6;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.entrar a {
+  color: white;
+}
+#trocar a{
+  color: rgba(var(--d69,0,149,246),1);
+}
+
+@media (max-width: 1024px) {
+  .caixa-central {
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  .caixa-central {
+    width: 90%;
+  }
+  .cell {
+    display: none;
+  }
+  .continue {
+    width: 100%;
+  }
+}
